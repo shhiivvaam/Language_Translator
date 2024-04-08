@@ -40,7 +40,7 @@ class _LanguageTranslationPageState extends State<LanguageTranslationPage> {
   TextEditingController languageController = TextEditingController();
 
   void translate(String src, String dest, String input) async {
-    GoogleTranslator translator = new GoogleTranslator();
+    GoogleTranslator translator = GoogleTranslator();
     var translation = await translator.translate(input, from: src, to: dest);
 
     setState(() {
